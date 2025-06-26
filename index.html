@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <header id="header">
@@ -244,6 +245,27 @@
                     Affiliation: Konya Technical University <br>
                     Language: Turkish <br>
                     Role: Instructor <br>
+                </li>
+            </ul>
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+                <li>
+                    <strong>May 2025</strong> | Certificate for Course D (BTR Review Training): Course D: Technical review of the information on financial, technology development and transfer and capacity building support provided to developing countries (UNFCCC)
+                </li>
+                <li>
+                    <strong>May 2025</strong> | Certificate for Course C.3 (BTR Review Training): Sub-course C.3: Mitigation policies and measures, actions and plans, including mitigation co-benefits resulting from adaptation actions and economic diversification plans, related to implementing and achieving NDC under Article 4 of the Paris Agreement (UNFCCC)
+                </li>
+                <li>
+                    <strong>May 2025</strong> | Certificate for Course C.2 (BTR Review Training): Sub-course C.2: Information necessary to track progress in implementing and achieving NDC (UNFCCC)
+                </li>
+                <li>
+                    <strong>May 2025</strong> | Certificate for Course C.1 (BTR Review Training): Sub-course C.1 National circumstances and institutional arrangements, and description of a Party’s NDC under Article 4 of the Paris Agreement including updates (UNFCCC)
+                </li>
+                <li>
+                    <strong>Feb 2025</strong> | Certificate for Course A (BTR Review Training): Course A: General and cross-cutting aspects for the technical expert review under the enhanced transparency framework under the Paris Agreement (UNFCCC)
+                </li>
+                <li>
+                    <strong>Nov 2015</strong> | Occupational Safety Expertise Certificate - Class C (Specialization Certificate, Document No. 123203)
                 </li>
             </ul>
 
@@ -491,6 +513,10 @@
             <h2> SCIENTIFIC ACTIVITES</h2>
             <h3>Oral Communications in International Conferences</h3>
             <ul>
+                <li>10<sup>th</sup> International Conference on Sustainable and Renewable Energy Engineering (ICSREE 2025)<br/>
+                    Abstract Presentation, Nice, France<br/>
+                    May 13-16, 2025
+                </li>
                 <li>9<sup>th</sup> International Marmara Sciences Congress (IMASCON 2022 Spring)<br/>
                     Paper Presentation, Kocaeli, Türkiye<br/>
                     May 13-14, 2022
@@ -607,27 +633,6 @@
             </ul>
 
             <hr/>
-            <h2>CERTIFICATIONS</h2>
-            <ul>
-                <li>
-                    <strong>May 2025</strong> | Certificate for Course D (BTR Review Training): Course D: Technical review of the information on financial, technology development and transfer and capacity building support provided to developing countries (UNFCCC)
-                </li>
-                <li>
-                    <strong>May 2025</strong> | Certificate for Course C.3 (BTR Review Training): Sub-course C.3: Mitigation policies and measures, actions and plans, including mitigation co-benefits resulting from adaptation actions and economic diversification plans, related to implementing and achieving NDC under Article 4 of the Paris Agreement (UNFCCC)
-                </li>
-                <li>
-                    <strong>May 2025</strong> | Certificate for Course C.2 (BTR Review Training): Sub-course C.2: Information necessary to track progress in implementing and achieving NDC (UNFCCC)
-                </li>
-                <li>
-                    <strong>May 2025</strong> | Certificate for Course C.1 (BTR Review Training): Sub-course C.1 National circumstances and institutional arrangements, and description of a Party’s NDC under Article 4 of the Paris Agreement including updates (UNFCCC)
-                </li>
-                <li>
-                    <strong>Feb 2025</strong> | Certificate for Course A (BTR Review Training): Course A: General and cross-cutting aspects for the technical expert review under the enhanced transparency framework under the Paris Agreement (UNFCCC)
-                </li>
-                <li>
-                    <strong>Nov 2015</strong> | Occupational Safety Expertise Certificate - Class C (Specialization Certificate, Document No. 123203)
-                </li>
-            </ul>
 
             <h2>NETWORKS AND MEMBERSHIP</h2>
 
@@ -717,6 +722,26 @@
         </p>
     </footer>
 </div>
-
+<script>
+  // Calculate age from date of birth
+  (function() {
+    const dob = new Date('1990-09-10');
+    const today = new Date();
+    let age = today.getFullYear() - dob.getFullYear();
+    const m = today.getMonth() - dob.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+      age--;
+    }
+    // Find the <b>Age:</b> element and update the next sibling text node
+    const labels = document.querySelectorAll('b');
+    labels.forEach(label => {
+      if (label.textContent.trim() === 'Age:') {
+        if (label.nextSibling) {
+          label.nextSibling.textContent = ' ' + age;
+        }
+      }
+    });
+  })();
+</script>
 </body>
 </html>
