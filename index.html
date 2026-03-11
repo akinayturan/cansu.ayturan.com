@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dr. Zeynep Cansu Ayturan - Environmental Engineer</title>
     <meta content="Environmental Engineer at Directorate Of Climate Change" name="description">
+    <link rel="canonical" href="https://cansu.ayturan.com/">
     <meta content="Dr. Zeynep Cansu Ayturan - Environmental Engineer" property="og:title">
     <meta content="Environmental Engineer at Directorate Of Climate Change" property="og:description">
-
-    <meta property="og:image" content="/profile.jpg">
+    <meta content="website" property="og:type">
+    <meta content="https://cansu.ayturan.com/" property="og:url">
+    <meta property="og:image" content="https://cansu.ayturan.com/profile.jpg">
     <meta content="summary" name="twitter:card">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="Dr. Zeynep Cansu Ayturan - Environmental Engineer" name="twitter:title">
+    <meta content="Environmental Engineer at Directorate Of Climate Change" name="twitter:description">
+    <meta content="https://cansu.ayturan.com/profile.jpg" name="twitter:image">
     <meta content="ayturan.com" name="generator">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,21 +82,28 @@
                         <b>Languages:</b> English, Turkish
                     </li>
                     <li>
-                        <b>Age:</b> 34
+                        <b>Age:</b> <span id="age-value">35</span>
                     </li>
                 </ul>
             </nav>
             <hr/>
             <div class="social-link-group">
                 <a class="social-icon-link w-inline-block" target="_blank" href="https://www.linkedin.com/in/zcayturan" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a class="social-icon-link w-inline-block" target="_blank" href="https://github.com/zcayturan" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a class="social-icon-link w-inline-block" target="_blank" href="https://www.facebook.com/cansuayturan" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                 <a class="social-icon-link w-inline-block" target="_blank" href="https://www.instagram.com/cansuayturan" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a class="social-icon-link w-inline-block" target="_blank" href="https://www.twitter.com/cansuayturan" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
                 <a class="social-icon-link w-inline-block" target="_blank" href="mailto:cansu@ayturan.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
-                <a class="social-icon-link w-inline-block" target="_blank" href="https://scholar.google.com/citations?user=5XkM28AAAAAJ" aria-label="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+                <a class="social-icon-link w-inline-block" target="_blank" href="https://github.com/zcayturan" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                  </div>
+            <div class="social-link-group">
+                <a class="social-icon-link w-inline-block" target="_blank" href="https://scholar.google.com/citations?user=5XkM28AAAAAJ" aria-label="Google Scholar"><img class="social-badge-icon" src="/icons/google-scholar.svg" alt="Google Scholar"></a>
+                <a class="social-icon-link w-inline-block" target="_blank" href="https://orcid.org/0000-0001-9513-4949" aria-label="ORCID"><img class="social-badge-icon" src="/icons/orcid.svg" alt="ORCID"></a>
+                <a class="social-icon-link w-inline-block" target="_blank" href="https://www.researchgate.net/profile/Zeynep-Ayturan" aria-label="ResearchGate"><img class="social-badge-icon" src="/icons/researchgate.svg" alt="ResearchGate"></a>
+                <a class="social-icon-link w-inline-block" target="_blank" href="https://search.trdizin.gov.tr/yazar/detay/783357/zeynep-cansu-ayturan" aria-label="TR Dizin"><img class="social-badge-icon" src="/icons/trdizin.svg" alt="TR Dizin"></a>
+                <a class="social-icon-link w-inline-block" target="_blank" href="http://www.scopus.com/inward/authorDetails.url?authorID=57204971317&partnerID=MN8TOARS" aria-label="Scopus"><img class="social-badge-icon" src="/icons/scopus.svg" alt="Scopus"></a>
+                <a class="social-icon-link w-inline-block" target="_blank" href="https://www.webofscience.com/wos/author/record/A-1288-2019" aria-label="Web of Science"><img class="social-badge-icon" src="/icons/web-of-science.svg" alt="Web of Science"></a>
+                <a class="social-icon-link w-inline-block" target="_blank" href="https://sciprofiles.com/profile/3302088" aria-label="SciProfiles"><img class="social-badge-icon" src="/icons/sciprofiles.svg" alt="SciProfiles"></a>
             </div>
-        </div>
 
     </div>
 
@@ -128,7 +139,7 @@
                     <div class="name">B.Sc. in Environmental Engineering</div>
                     <div class="company">Middle East Technical University, Ankara, Türkiye</div>
                 </li>
-                <p>~~</p>
+                <li class="resume-item" aria-hidden="true">~~</li>
                 <li class="resume-item">
                     <div class="date">Sep 2023 - Ongoing</div>
                     <div class="name">M.Sc. in Clean Inexhaustible Energies</div>
@@ -732,7 +743,6 @@
     </footer>
 </div>
 <script>
-  // Calculate age from date of birth
   (function() {
     const dob = new Date('1990-09-10');
     const today = new Date();
@@ -741,15 +751,10 @@
     if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
       age--;
     }
-    // Find the <b>Age:</b> element and update the next sibling text node
-    const labels = document.querySelectorAll('b');
-    labels.forEach(label => {
-      if (label.textContent.trim() === 'Age:') {
-        if (label.nextSibling) {
-          label.nextSibling.textContent = ' ' + age;
-        }
-      }
-    });
+    const ageValue = document.getElementById('age-value');
+    if (ageValue) {
+      ageValue.textContent = age;
+    }
   })();
 </script>
 </body>

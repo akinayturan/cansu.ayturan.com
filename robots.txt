@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://cansu.ayturan.com/sitemap.xml

@@ -611,6 +611,12 @@ code[class*=language-], pre[class*=language-] {
     opacity: 0.9;
 }
 
+.social-badge-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
 .w-inline-block {
     max-width: 100%;
     display: inline-block !important;
