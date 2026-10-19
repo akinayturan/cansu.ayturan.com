@@ -1946,6 +1946,7 @@ body.academic-cv .cv-experience > ul:first-of-type { padding-left: 0; }
 body.academic-cv #footer { box-sizing: border-box; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; width: 100%; }
 body.academic-cv #footer p { margin: 0; }
 body.academic-cv .copyright { float: none; }
+body.academic-cv .footer-heart { color: #d64550; }
 @media (max-width: 760px) {
     body.academic-cv #header, body.academic-cv #page { box-sizing: border-box; padding: 0; }
     body.academic-cv #content, body.academic-cv #footer { box-sizing: border-box; padding-left: 0; padding-right: 0; }
